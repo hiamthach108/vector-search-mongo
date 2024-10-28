@@ -3,7 +3,7 @@ import { Router } from 'express';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import testModel from '../models/test.model';
 
-const genAI = new GoogleGenerativeAI('AIzaSyDxqfrEoizpbIq3wfogHWw1oA3EwsQs1Io');
+const genAI = new GoogleGenerativeAI('');
 
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 const embedModel = genAI.getGenerativeModel({ model: 'text-embedding-004' });
